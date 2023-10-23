@@ -1,5 +1,3 @@
-
-// ref: https://umijs.org/config/
 import { resolve } from "path";
 import theme from "./theme.config"
 
@@ -20,7 +18,6 @@ export default {
     d3: 'window.d3',
   },
   plugins: [
-    // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: true,
       dva: true,
@@ -29,7 +26,7 @@ export default {
         loadingComponent: './components/PageLoading/index.js'
       },
       title: 'antd-umi-2.6',
-      dll: true,
+      dll: true,//启用了 DLL（动态链接库）以加快编译速度
       locale: {
         enable: true,
         default: 'zh-CN',//'en-US',

@@ -7,7 +7,7 @@
 import { PureComponent } from 'react';
 import { connect } from 'dva';
 import router from 'umi/router';
-import { ContainerQuery } from 'react-container-query';
+import { ContainerQuery } from 'react-container-query';//导入 react-container-query 库的 ContainerQuery 组件，用于根据容器尺寸应用不同的样式
 import { Layout, BackTop, Icon } from 'antd';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
@@ -20,7 +20,7 @@ import Authorized from '../components/Authorized';
 import { query } from '../constant';
 import ContentHeader from './header';
 import Logo from './logo';
-import StartedModal from './startedModal';
+// import StartedModal from './startedModal';
 import styles from './index.less';
 
 const { Header, Sider, Content } = Layout;
@@ -190,7 +190,7 @@ class Platform extends PureComponent {
                             <BackTop target={() => document.getElementById('backTop')} style={{ right: 20, bottom: 25 }} />
                         </Layout>
                         {/* 点赞弹窗 */}
-                        <StartedModal />
+                        {/* <StartedModal /> */}
                     </Context.Provider>
                 )}
             </ContainerQuery>

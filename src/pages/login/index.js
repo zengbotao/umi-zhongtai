@@ -18,6 +18,7 @@ import styles from './index.less';
     loading: loading.global,
   })
 )
+// @connect 装饰器将组件连接到 Redux store，并从 store 中获取相关状态和 dispatch 方法。
 class Index extends PureComponent {
   componentDidMount() {
     const { location: { query = {} } } = this.props;
